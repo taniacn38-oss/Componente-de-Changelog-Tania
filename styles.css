@@ -1,10 +1,10 @@
-/* RESET BÁSICO Y ESTILOS GENERALES */
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #fff0f5; /* Fondo Rosa Champaña / LavenderBlush */
+  background-color: #fff0f5; 
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 40px 20px;
@@ -14,10 +14,10 @@ body {
   min-height: 100vh;
 }
 
-/* TARJETA CONTENEDORA */
+
 .tarjeta-changelog {
   background-color: #ffffff;
-  border: 2px solid #ffb6c1; /* Borde rosa pastel suave */
+  border: 2px solid #ffb6c1; 
   border-radius: 24px;
   width: 100%;
   max-width: 600px;
@@ -25,7 +25,7 @@ body {
   box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
 }
 
-/* ENCABEZADO */
+
 .encabezado {
   text-align: center;
   margin-bottom: 30px;
@@ -41,7 +41,7 @@ body {
 }
 
 .encabezado h1 {
-  color: #7b4b94; /* Morado dulce suave */
+  color: #7b4b94;
   font-size: 32px;
   margin: 10px 0 5px 0;
 }
@@ -52,7 +52,6 @@ body {
   margin: 0;
 }
 
-/* LISTA DE CAMBIOS CON LÍNEA TEMPORAL (TIMELINE) */
 .lista-cambios {
   display: flex;
   flex-direction: column;
@@ -68,7 +67,7 @@ body {
   padding-bottom: 25px;
 }
 
-/* Línea vertical decorativa conectando los puntos */
+
 .item-historial::before {
   content: "";
   position: absolute;
@@ -76,15 +75,15 @@ body {
   top: 15px;
   width: 2px;
   height: 100%;
-  background-color: #ffd1dc; /* Rosa chicle pastel */
+  background-color: #ffd1dc;
 }
 
-/* Quitar la línea en el último elemento */
+
 .item-historial:last-child::before {
   display: none;
 }
 
-/* Puntos rosas de la línea de tiempo */
+
 .punto-linea {
   position: absolute;
   left: 0;
@@ -92,7 +91,7 @@ body {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #ff8da1; /* Rosa pastel encendido */
+  background-color: #ff8da1;
   border: 3px solid #ffffff;
   box-shadow: 0 0 0 2px #ffb6c1;
 }
@@ -105,14 +104,14 @@ body {
 
 .fecha {
   font-size: 13px;
-  color: #d87093; /* PaleVioletRed */
+  color: #d87093;
   font-weight: bold;
 }
 
 .titulo-cambio {
   margin: 0;
   font-size: 16px;
-  color: #4a3b5c; /* Morado grisáceo para buena lectura */
+  color: #4a3b5c; 
   font-weight: bold;
 }
 
@@ -120,7 +119,7 @@ body {
   color: #ff6b8b; /* Cambia a rosa pastel brillante al pasar el mouse */
 }
 
-/* PIE DE PÁGINA Y BOTÓN */
+
 .pie-pagina {
   text-align: center;
   margin-top: 10px;
@@ -130,7 +129,7 @@ body {
 
 .btn-completo {
   display: inline-block;
-  background-color: #ff8da1; /* Rosa pastel dulce */
+  background-color: #ff8da1; 
   color: #ffffff;
   text-decoration: none;
   padding: 12px 24px;
@@ -144,7 +143,7 @@ body {
   background-color: #ff6b8b;
 }
 
-/* ADAPTACIÓN RESPONSIVA (PANTALLAS PEQUEÑAS) */
+
 @media (max-width: 480px) {
   .tarjeta-changelog {
     padding: 20px;
