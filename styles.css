@@ -1,0 +1,164 @@
+/* RESET BÁSICO Y ESTILOS GENERALES */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff0f5; /* Fondo Rosa Champaña / LavenderBlush */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* TARJETA CONTENEDORA */
+.tarjeta-changelog {
+  background-color: #ffffff;
+  border: 2px solid #ffb6c1; /* Borde rosa pastel suave */
+  border-radius: 24px;
+  width: 100%;
+  max-width: 600px;
+  padding: 35px;
+  box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
+}
+
+/* ENCABEZADO */
+.encabezado {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.badge-tag {
+  background-color: #ffe4e1;
+  color: #d87093;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.encabezado h1 {
+  color: #7b4b94; /* Morado dulce suave */
+  font-size: 32px;
+  margin: 10px 0 5px 0;
+}
+
+.subtitulo {
+  color: #9c88b2;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* LISTA DE CAMBIOS CON LÍNEA TEMPORAL (TIMELINE) */
+.lista-cambios {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 10px;
+}
+
+.item-historial {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 25px;
+}
+
+/* Línea vertical decorativa conectando los puntos */
+.item-historial::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 15px;
+  width: 2px;
+  height: 100%;
+  background-color: #ffd1dc; /* Rosa chicle pastel */
+}
+
+/* Quitar la línea en el último elemento */
+.item-historial:last-child::before {
+  display: none;
+}
+
+/* Puntos rosas de la línea de tiempo */
+.punto-linea {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ff8da1; /* Rosa pastel encendido */
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 2px #ffb6c1;
+}
+
+.contenido-cambio {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.fecha {
+  font-size: 13px;
+  color: #d87093; /* PaleVioletRed */
+  font-weight: bold;
+}
+
+.titulo-cambio {
+  margin: 0;
+  font-size: 16px;
+  color: #4a3b5c; /* Morado grisáceo para buena lectura */
+  font-weight: bold;
+}
+
+.item-historial:hover .titulo-cambio {
+  color: #ff6b8b; /* Cambia a rosa pastel brillante al pasar el mouse */
+}
+
+/* PIE DE PÁGINA Y BOTÓN */
+.pie-pagina {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 2px dashed #ffe4e1;
+}
+
+.btn-completo {
+  display: inline-block;
+  background-color: #ff8da1; /* Rosa pastel dulce */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-completo:hover {
+  background-color: #ff6b8b;
+}
+
+/* ADAPTACIÓN RESPONSIVA (PANTALLAS PEQUEÑAS) */
+@media (max-width: 480px) {
+  .tarjeta-changelog {
+    padding: 20px;
+  }
+
+  .encabezado h1 {
+    font-size: 26px;
+  }
+
+  .subtitulo {
+    font-size: 13px;
+  }
+
+  .titulo-cambio {
+    font-size: 14px;
+  }
+}
